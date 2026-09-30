@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pdftool.app"
+    android:versionCode="2"
+    android:versionName="1.1.0">
+
+    <!--
+      The app uses the Storage Access Framework (ACTION_OPEN_DOCUMENT /
+      ACTION_CREATE_DOCUMENT), so it does NOT need READ/WRITE_EXTERNAL_STORAGE.
+      This keeps it compatible with scoped storage on every Android version
+      from Android 5.0 (API 21) upward.
+    -->
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PdfTool">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PdfTool">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.ConversionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PdfTool" />
+
+
+        <provider
+            android:name=".engine.ShareProvider"
+            android:authorities="com.pdftool.app.share"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Light theme: framework Material theme, no AndroidX / Material libs -->
+    <style name="Theme.PdfTool" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">@color/brand</item>
+        <item name="android:colorPrimaryDark">@color/brand_dark</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:colorBackground">@color/bg_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/bg_light</item>
+    </style>
+</resources>

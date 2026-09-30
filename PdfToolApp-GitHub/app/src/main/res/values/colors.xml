@@ -1,0 +1,22 @@
+<resources>
+    <color name="brand">#1565C0</color>
+    <color name="brand_dark">#0D47A1</color>
+
+    <color name="bg_light">#F5F7FA</color>
+    <color name="bg_dark">#0F1115</color>
+
+    <color name="card_light">#FFFFFF</color>
+    <color name="card_dark">#1A1D23</color>
+
+    <color name="text_primary_light">#1A1C1E</color>
+    <color name="text_primary_dark">#E7EAEE</color>
+
+    <color name="text_secondary_light">#5A5F66</color>
+    <color name="text_secondary_dark">#A2A8B2</color>
+
+    <color name="card_stroke_light">#E2E6EC</color>
+    <color name="card_stroke_dark">#2A2F37</color>
+
+    <color name="divider_light">#E0E0E0</color>
+    <color name="divider_dark">#2A2F37</color>
+</resources>
